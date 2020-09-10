@@ -15,6 +15,7 @@ public class CoinChangeProblem {
 
     public void findTheSumValue() {
         createMemoizationMatrix();
+        findAndPrintValue();
     }
 
     private void createMemoizationMatrix() {
@@ -41,5 +42,10 @@ public class CoinChangeProblem {
             }
         }
         Utility.printIntMatrix(memMatrix);
+    }
+
+    private void findAndPrintValue() {
+        System.out.println();
+        System.out.println("Number of ways are: " + memMatrix[coinDenominations.length][sumValue]);
     }
 }
