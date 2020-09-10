@@ -1,9 +1,9 @@
-import com.anudev.ds.dynamicprogramming.CoinChangeProblem;
+import com.anudev.ds.dynamicprogramming.CoinChangeProblem2;
 
 public class MainClass {
 
     public static void main(String[] args) {
-        CoinChangeProblem coinChangeProblem = new CoinChangeProblem();
+        CoinChangeProblem2 coinChangeProblem = new CoinChangeProblem2();
         coinChangeProblem.findTheSumValue();
     }
 }
