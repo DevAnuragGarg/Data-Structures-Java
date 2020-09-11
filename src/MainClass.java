@@ -1,9 +1,9 @@
-import com.anudev.ds.dynamicprogramming.SeiveOfEratosthenes;
+import com.anudev.ds.arrays.NextGreaterElement;
 
 public class MainClass {
 
     public static void main(String[] args) {
-        SeiveOfEratosthenes seiveOfEratosthenes = new SeiveOfEratosthenes();
-        seiveOfEratosthenes.printPrimeNumbers();
+        NextGreaterElement nextGreaterElement = new NextGreaterElement();
+        nextGreaterElement.printNextGreaterElements();
     }
 }
