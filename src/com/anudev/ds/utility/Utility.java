@@ -10,4 +10,10 @@ public class Utility {
             System.out.println();
         }
     }
+
+    public static void printIntArray(int[] array) {
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+    }
 }

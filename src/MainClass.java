@@ -1,9 +1,9 @@
-import com.anudev.ds.dynamicprogramming.CoinChangeProblem2;
+import com.anudev.ds.dynamicprogramming.SeiveOfEratosthenes;
 
 public class MainClass {
 
     public static void main(String[] args) {
-        CoinChangeProblem2 coinChangeProblem = new CoinChangeProblem2();
-        coinChangeProblem.findTheSumValue();
+        SeiveOfEratosthenes seiveOfEratosthenes = new SeiveOfEratosthenes();
+        seiveOfEratosthenes.printPrimeNumbers();
     }
 }
