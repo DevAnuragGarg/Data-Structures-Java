@@ -1,9 +1,9 @@
-import com.anudev.ds.arrays.NextGreaterElement;
+import com.anudev.ds.dynamicprogramming.LongestCommonSubsequence;
 
 public class MainClass {
 
     public static void main(String[] args) {
-        NextGreaterElement nextGreaterElement = new NextGreaterElement();
-        nextGreaterElement.printNextGreaterElements();
+        LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence();
+        longestCommonSubsequence.lengthOfLongestCommonSubsequence();
     }
 }

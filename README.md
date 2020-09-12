@@ -8,6 +8,8 @@ Data structure interview questions with code in JAVA
 
 3) [***Sieve of Eratosthenes (Find the prime numbers)***](Data-Structures-Java/blob/master/src/com/anudev/ds/dynamicprogramming/SeiveOfEratosthenes.java): Given a number n, print all primes smaller than or equal to n.
 
+4) [***Longest Common Subsequence***](Data-Structures-Java/blob/master/src/com/anudev/ds/dynamicprogramming/LongestCommonSubsequence.java): Given two sequences, find the length of the longest subsequence present in both of them.
+
 ##Arrays
 
 1) [***Next greater element (Using stacks)***](Data-Structures-Java/blob/master/src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
