@@ -33,6 +33,9 @@ public class ConstructBinarySearchTree {
         }
         System.out.println("BST created");
         PreOrderTraversal preOrderTraversal = new PreOrderTraversal();
-        preOrderTraversal.recursivePreOrderTraversal(rootNode);
+        preOrderTraversal.preOrderTraversal(rootNode);
+
+        InOrderTraversal inOrderTraversal = new InOrderTraversal();
+        inOrderTraversal.inOrderTraversal(rootNode);
     }
 }
