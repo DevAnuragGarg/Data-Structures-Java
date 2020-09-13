@@ -1,9 +1,9 @@
-import com.anudev.ds.dynamicprogramming.LongestCommonSubsequence;
+import com.anudev.ds.trees.ConstructBinarySearchTree;
 
 public class MainClass {
 
     public static void main(String[] args) {
-        LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence();
-        longestCommonSubsequence.lengthOfLongestCommonSubsequence();
+        ConstructBinarySearchTree constructBinarySearchTree = new ConstructBinarySearchTree();
+        constructBinarySearchTree.createBST();
     }
 }
