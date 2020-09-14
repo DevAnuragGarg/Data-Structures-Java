@@ -32,10 +32,17 @@ public class ConstructBinarySearchTree {
             }
         }
         System.out.println("BST created");
+
+        // pre order traversal
         PreOrderTraversal preOrderTraversal = new PreOrderTraversal();
         preOrderTraversal.preOrderTraversal(rootNode);
 
+        // in order traversal
         InOrderTraversal inOrderTraversal = new InOrderTraversal();
         inOrderTraversal.inOrderTraversal(rootNode);
+
+        // post order traversal
+        PostOrderTraversal postOrderTraversal = new PostOrderTraversal();
+        postOrderTraversal.postOrderTraversal(rootNode);
     }
 }
