@@ -3,7 +3,7 @@ package com.anudev.ds.trees;
 public class PostOrderTraversal {
 
     public void postOrderTraversal(Node node) {
-        System.out.print("In order traversal: ");
+        System.out.print("Recursive Post order traversal: ");
         recursivePostOrderTraversal(node);
         System.out.println();
     }
