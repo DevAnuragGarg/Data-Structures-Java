@@ -1,11 +1,11 @@
-import com.anudev.ds.trees.LevelTraversing;
+import com.anudev.ds.trees.ConstructBinarySearchTree;
 
 public class MainClass {
 
     public static void main(String[] args) {
 
         // level traversal
-        LevelTraversing levelTraversing = new LevelTraversing();
-        levelTraversing.printLevelOrderTraversing();
+        ConstructBinarySearchTree constructBinarySearchTree = new ConstructBinarySearchTree();
+        constructBinarySearchTree.createBST();
     }
 }
