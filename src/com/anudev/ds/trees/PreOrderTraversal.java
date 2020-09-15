@@ -5,10 +5,10 @@ import java.util.Stack;
 public class PreOrderTraversal {
 
     public void preOrderTraversal(Node node) {
-        System.out.print("Recursive Pre order traversal: ");
+        System.out.print("Recursive Pre order traversal: \t\t");
         recursivePreOrderTraversal(node);
         System.out.println();
-        System.out.print("Non Recursive Pre order traversal: ");
+        System.out.print("Non Recursive Pre order traversal: \t");
         nonRecursivePreOrderTraversal(node);
         System.out.println();
         System.out.print("Non Recursive Pre order traversal2: ");
@@ -49,14 +49,16 @@ public class PreOrderTraversal {
             return;
         }
         Stack<Node> stack = new Stack<>();
-        stack.push(node);
 
-        while (!stack.isEmpty()) {
+        while (true) {
             // keep pushing the left nodes
             while (node != null) {
                 System.out.print(node.getValue() + ",");
                 stack.push(node);
                 node = node.getLeftNode();
+            }
+            if(stack.isEmpty()){
+                break;
             }
             node = stack.pop().getRightNode();
         }
