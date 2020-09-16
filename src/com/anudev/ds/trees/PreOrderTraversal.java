@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class PreOrderTraversal {
 
-    public void preOrderTraversal(Node node) {
+    public static void preOrderTraversal(Node node) {
         System.out.print("Recursive Pre order traversal: \t\t");
         recursivePreOrderTraversal(node);
         System.out.println();
@@ -16,7 +16,7 @@ public class PreOrderTraversal {
         System.out.println();
     }
 
-    private void recursivePreOrderTraversal(Node node) {
+    private static void recursivePreOrderTraversal(Node node) {
         if (node != null) {
             System.out.print(node.getValue() + ",");
             recursivePreOrderTraversal(node.getLeftNode());
@@ -24,7 +24,7 @@ public class PreOrderTraversal {
         }
     }
 
-    private void nonRecursivePreOrderTraversal(Node node) {
+    private static void nonRecursivePreOrderTraversal(Node node) {
         Stack<Node> stack = new Stack<>();
         stack.push(node);
 
@@ -44,7 +44,7 @@ public class PreOrderTraversal {
         }
     }
 
-    private void nonRecursivePreOrderTraversal2(Node node) {
+    private static void nonRecursivePreOrderTraversal2(Node node) {
         if (node == null) {
             return;
         }
@@ -57,7 +57,7 @@ public class PreOrderTraversal {
                 stack.push(node);
                 node = node.getLeftNode();
             }
-            if(stack.isEmpty()){
+            if (stack.isEmpty()) {
                 break;
             }
             node = stack.pop().getRightNode();

@@ -2,10 +2,9 @@ package com.anudev.ds.trees;
 
 public class ConstructBinarySearchTree {
 
-    private final int[] array = {12, 15, 5, 9, 1, 3, 20, 17, 19, 2, 4, 16};
-    private Node rootNode;
+    private static Node rootNode;
 
-    public void createBST() {
+    public static void constructBST(int[] array) {
         rootNode = new Node(array[0]);
 
         for (int i = 1; i < array.length; i++) {
@@ -32,17 +31,9 @@ public class ConstructBinarySearchTree {
             }
         }
         System.out.println("BST created");
+    }
 
-        // pre order traversal
-        PreOrderTraversal preOrderTraversal = new PreOrderTraversal();
-        preOrderTraversal.preOrderTraversal(rootNode);
-
-        // in order traversal
-        InOrderTraversal inOrderTraversal = new InOrderTraversal();
-        inOrderTraversal.inOrderTraversal(rootNode);
-
-        // post order traversal
-        PostOrderTraversal postOrderTraversal = new PostOrderTraversal();
-        postOrderTraversal.postOrderTraversal(rootNode);
+    public static Node getRootNode() {
+        return rootNode;
     }
 }

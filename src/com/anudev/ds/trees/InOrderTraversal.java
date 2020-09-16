@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class InOrderTraversal {
 
-    public void inOrderTraversal(Node node) {
+    public static void inOrderTraversal(Node node) {
         System.out.print("Recursive In order traversal: \t\t");
         recursiveInOrderTraversal(node);
         System.out.println();
@@ -13,7 +13,7 @@ public class InOrderTraversal {
         System.out.println();
     }
 
-    private void recursiveInOrderTraversal(Node node) {
+    private static void recursiveInOrderTraversal(Node node) {
         if (node != null) {
             recursiveInOrderTraversal(node.getLeftNode());
             System.out.print(node.getValue() + ",");
@@ -21,7 +21,7 @@ public class InOrderTraversal {
         }
     }
 
-    private void nonRecursiveInOrderTraversal(Node node) {
+    private static void nonRecursiveInOrderTraversal(Node node) {
         if (node == null) {
             return;
         }

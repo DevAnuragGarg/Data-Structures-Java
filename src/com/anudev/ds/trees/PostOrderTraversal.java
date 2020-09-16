@@ -11,16 +11,16 @@ import java.util.Stack;
  */
 public class PostOrderTraversal {
 
-    public void postOrderTraversal(Node node) {
-        System.out.print("Recursive Post order traversal: \t\t");
+    public static void postOrderTraversal(Node node) {
+        System.out.print("Recursive Post order traversal: \t");
         recursivePostOrderTraversal(node);
         System.out.println();
-        System.out.print("Non Recursive Post order traversal: \t");
+        System.out.print("Non Recursive Post order traversal: ");
         nonRecursivePostOrderTraversal(node);
         System.out.println();
     }
 
-    private void recursivePostOrderTraversal(Node node) {
+    private static void recursivePostOrderTraversal(Node node) {
         if (node != null) {
             recursivePostOrderTraversal(node.getLeftNode());
             recursivePostOrderTraversal(node.getRightNode());
@@ -28,7 +28,7 @@ public class PostOrderTraversal {
         }
     }
 
-    private void nonRecursivePostOrderTraversal(Node node) {
+    private static void nonRecursivePostOrderTraversal(Node node) {
         if (node == null) {
             return;
         }
