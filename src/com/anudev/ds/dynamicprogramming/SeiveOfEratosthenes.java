@@ -1,6 +1,6 @@
 package com.anudev.ds.dynamicprogramming;
 
-import com.anudev.ds.utility.Utility;
+import com.anudev.ds.arrays.ArraysUtility;
 
 /*
  * we wil create an array of that number. When we reach a number we will start
@@ -9,12 +9,14 @@ import com.anudev.ds.utility.Utility;
  * n we will stop and all the numbers which are left are the prime number.
  */
 public class SeiveOfEratosthenes {
+
+    private final int primeTillNumber = 100;
+
     private int[] tempArray;
-    private int primeTillNumber = 100;
 
     public void printPrimeNumbers() {
         seiveOfEratosthenesAlgo();
-        Utility.printIntArray(tempArray);
+        ArraysUtility.printIntArray(tempArray);
     }
 
     private void seiveOfEratosthenesAlgo() {

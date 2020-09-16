@@ -1,6 +1,7 @@
-package com.anudev.ds.utility;
+package com.anudev.ds.arrays;
 
-public class Utility {
+public class ArraysUtility {
+
 
     public static void printIntMatrix(int[][] matrix) {
         for (int[] ints : matrix) {

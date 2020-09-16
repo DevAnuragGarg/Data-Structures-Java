@@ -1,6 +1,6 @@
 package com.anudev.ds.dynamicprogramming;
 
-import com.anudev.ds.utility.Utility;
+import com.anudev.ds.arrays.ArraysUtility;
 
 /**
  * You are given unlimited supply coins of some denominations
@@ -9,9 +9,10 @@ import com.anudev.ds.utility.Utility;
  */
 public class CoinChangeProblem {
 
-    private int sumValue = 8;
+    private final int sumValue = 8;
+    private final int[] coinDenominations = {1, 2, 3, 5};
+
     private int[][] memMatrix;
-    private int[] coinDenominations = {1, 2, 3, 5};
 
     public void findTheSumValue() {
         createMemoizationMatrix();
@@ -46,7 +47,7 @@ public class CoinChangeProblem {
                 }
             }
         }
-        Utility.printIntMatrix(memMatrix);
+        ArraysUtility.printIntMatrix(memMatrix);
     }
 
     private void findAndPrintValue() {

@@ -1,6 +1,6 @@
 package com.anudev.ds.dynamicprogramming;
 
-import com.anudev.ds.utility.Utility;
+import com.anudev.ds.arrays.ArraysUtility;
 
 /**
  * You are given unlimited supply coins of some denominations
@@ -49,7 +49,7 @@ public class CoinChangeProblem2 {
                 }
             }
         }
-        Utility.printIntMatrix(memMatrix);
+        ArraysUtility.printIntMatrix(memMatrix);
     }
 
     private void findAndPrintValue() {
