@@ -20,6 +20,10 @@ public class TreesMainProgram {
         System.out.println("Height of Tree Recursively:\t\t" + HeightOfBinaryTree.heightOfBinaryTreeRecursively(rootNode));
         System.out.println("Height of Tree Non Recursively:\t" + HeightOfBinaryTree.heightOfBinaryTreeNonRecursively(rootNode));
 
+        // size of binary tree
+        System.out.println("Size of Tree Recursively:\t\t" + SizeOfBinaryTree.sizeOfBinaryTreeRecursively(rootNode));
+        System.out.println("Size of Tree Non Recursively:\t" + SizeOfBinaryTree.sizeOfBinaryTreeNonRecursively(rootNode));
+
         // traversal
         //PreOrderTraversal.preOrderTraversal(rootNode);
         //InOrderTraversal.inOrderTraversal(rootNode);

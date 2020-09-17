@@ -35,7 +35,7 @@ public class PostOrderTraversal {
         Stack<Node> stack = new Stack<>();
 
         while (true) {
-            // try to push nodes which are there in left substree
+            // try to push nodes which are there in left subtree
             if (node != null) {
                 // push the node in the stack
                 stack.push(node);
