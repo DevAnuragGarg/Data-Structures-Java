@@ -1,5 +1,19 @@
 package com.anudev.ds.trees;
 
+/**
+ * Tree for the below mentioned array
+ * <p>
+ * 12
+ * /       \
+ * 5         15
+ * /   \         \
+ * 1     9         20
+ * \             /
+ * 3          17
+ * / \        /  \
+ * 2   4     16    19
+ */
+
 public class TreesMainProgram {
 
     public static void main(String[] args) {
@@ -27,9 +41,8 @@ public class TreesMainProgram {
         // deepest node of binary tree
         DeepestNodeOfBinaryTree.printDeepestNode(rootNode);
 
-        // traversal
-        //PreOrderTraversal.preOrderTraversal(rootNode);
-        //InOrderTraversal.inOrderTraversal(rootNode);
-        //PostOrderTraversal.postOrderTraversal(rootNode);
+        // Number of leaves
+        System.out.println("Number of Leaves in tree Recursively:\t\t" + NumberOfLeaves.findNumberOfLeavesRecursively(rootNode));
+        System.out.println("Number of Leaves in tree Non Recursively:\t" + NumberOfLeaves.findNumberOfLeavesNonRecursively(rootNode));
     }
 }
