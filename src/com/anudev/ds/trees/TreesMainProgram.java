@@ -15,6 +15,11 @@ public class TreesMainProgram {
         PostOrderTraversal.postOrderTraversal(rootNode);
         LevelTraversing.nonRecursiveLevelTraversal(rootNode);
 
+        // height of tree
+        System.out.println();
+        System.out.println("Height of Tree Recursively:\t\t" + HeightOfBinaryTree.heightOfBinaryTreeRecursively(rootNode));
+        System.out.println("Height of Tree Non Recursively:\t" + HeightOfBinaryTree.heightOfBinaryTreeNonRecursively(rootNode));
+
         // traversal
         //PreOrderTraversal.preOrderTraversal(rootNode);
         //InOrderTraversal.inOrderTraversal(rootNode);
