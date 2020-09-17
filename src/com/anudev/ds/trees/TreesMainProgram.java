@@ -13,13 +13,11 @@ public class TreesMainProgram {
         PreOrderTraversal.preOrderTraversal(rootNode);
         InOrderTraversal.inOrderTraversal(rootNode);
         PostOrderTraversal.postOrderTraversal(rootNode);
-
-        // heap sorting
-        HeapSort.heapSort(rootNode);
+        LevelTraversing.nonRecursiveLevelTraversal(rootNode);
 
         // traversal
-        PreOrderTraversal.preOrderTraversal(rootNode);
-        InOrderTraversal.inOrderTraversal(rootNode);
-        PostOrderTraversal.postOrderTraversal(rootNode);
+        //PreOrderTraversal.preOrderTraversal(rootNode);
+        //InOrderTraversal.inOrderTraversal(rootNode);
+        //PostOrderTraversal.postOrderTraversal(rootNode);
     }
 }

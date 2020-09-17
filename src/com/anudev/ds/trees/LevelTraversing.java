@@ -5,13 +5,11 @@ import java.util.Queue;
 
 public class LevelTraversing {
 
-    public void printLevelOrderTraversing() {
-        nonRecursiveLevelTraversal(TreeDummyData.getRootNode());
-    }
-
-    private void nonRecursiveLevelTraversal(Node node) {
+    public static void nonRecursiveLevelTraversal(Node node) {
+        System.out.print("Non recursive Level order traversal: ");
         Queue<Node> queue = new LinkedList<>();
         queue.add(node);
+
         while (!queue.isEmpty()) {
             Node pollNode = queue.poll();
             System.out.print(pollNode.getValue() + ",");
