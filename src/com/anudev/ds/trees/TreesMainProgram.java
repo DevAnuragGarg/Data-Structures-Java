@@ -24,6 +24,9 @@ public class TreesMainProgram {
         System.out.println("Size of Tree Recursively:\t\t" + SizeOfBinaryTree.sizeOfBinaryTreeRecursively(rootNode));
         System.out.println("Size of Tree Non Recursively:\t" + SizeOfBinaryTree.sizeOfBinaryTreeNonRecursively(rootNode));
 
+        // deepest node of binary tree
+        DeepestNodeOfBinaryTree.printDeepestNode(rootNode);
+
         // traversal
         //PreOrderTraversal.preOrderTraversal(rootNode);
         //InOrderTraversal.inOrderTraversal(rootNode);
