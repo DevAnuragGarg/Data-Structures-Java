@@ -3,15 +3,15 @@ package com.anudev.ds.trees;
 /**
  * Tree for the below mentioned array
  * <p>
- * 12
- * /       \
- * 5         15
- * /   \         \
- * 1     9         20
- * \             /
- * 3          17
- * / \        /  \
- * 2   4     16    19
+ *                  12
+ *              /       \
+ *             5         15
+ *           /   \         \
+ *          1     9         20
+ *           \             /
+ *            3          17
+ *           / \        /  \
+ *          2   4     16    19
  */
 
 public class TreesMainProgram {
@@ -44,5 +44,9 @@ public class TreesMainProgram {
         // Number of leaves
         System.out.println("Number of Leaves in tree Recursively:\t\t" + NumberOfLeaves.findNumberOfLeavesRecursively(rootNode));
         System.out.println("Number of Leaves in tree Non Recursively:\t" + NumberOfLeaves.findNumberOfLeavesNonRecursively(rootNode));
+
+
+        // diameter of the tree
+        System.out.println("Diameter of the tree is: " + DiameterOfTree.diameterOfTree(rootNode));
     }
 }
