@@ -60,5 +60,9 @@ public class TreesMainProgram {
         // print root to leaf paths
         PrintEachRootToLeafPath.printAllPaths(rootNode);
         System.out.println();
+
+        // Print all the ancestors of tree
+        System.out.println("Print all ancestors of node:\t");
+        PrintAllAncestorsOfNode.printAncestorsOfNode(rootNode, new Node(16));
     }
 }
