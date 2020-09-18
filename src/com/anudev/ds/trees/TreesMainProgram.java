@@ -3,15 +3,15 @@ package com.anudev.ds.trees;
 /**
  * Tree for the below mentioned array
  * <p>
- *                  12
- *              /       \
- *             5         15
- *           /   \         \
- *          1     9         20
- *           \             /
- *            3          17
- *           / \        /  \
- *          2   4     16    19
+ * //            12
+ * //         /       \
+ * //       5         15
+ * //     /   \         \
+ * //    1     9         20
+ * //     \             /
+ * //      3          17
+ * //     / \        /  \
+ * //    2   4     16    19
  */
 
 public class TreesMainProgram {
@@ -48,5 +48,8 @@ public class TreesMainProgram {
 
         // diameter of the tree
         System.out.println("Diameter of the tree is: " + DiameterOfTree.diameterOfTree(rootNode));
+
+        // vertical sum of the tree
+        VerticalSumOfTree.printTheVerticalSum(rootNode);
     }
 }
