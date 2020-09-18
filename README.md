@@ -10,6 +10,12 @@ Data structure interview questions with code in JAVA
 
 4) [***Longest Common Subsequence***](src/com/anudev/ds/dynamicprogramming/LongestCommonSubsequence.java): Given two sequences, find the length of the longest subsequence present in both of them.
 
+## Arrays
+1) [***Next greater element (Using stacks)***](src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
+
+## Linked List
+1)
+
 ## Trees :deciduous_tree:
 1) [***Binary search tree: construct***](src/com/anudev/ds/trees/ConstructBinarySearchTree.java): Construction of binary search tree from integer array.
 
@@ -25,6 +31,22 @@ Data structure interview questions with code in JAVA
 
 7) [***Post-Order Traversal of BST: (Non-Recursive)***](src/com/anudev/ds/trees/PostOrderTraversal.java): Post-order traversal of Binary Tree non-recursively using stacks.
 
+8) [***Diameter of Binary Tree***](src/com/anudev/ds/trees/DiameterOfTree.java): Diameter of tree is the length of the longest path between any two nodes in a tree. The path may or may not pass through root.
 
-## Arrays
-1) [***Next greater element (Using stacks)***](src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
+9) [***Deepest node in Binary Tree***](src/com/anudev/ds/trees/DeepestNodeOfBinaryTree.java): Given a binary tree, find the deepest node in it.
+
+10) [***Boundary Traversal of Binary tree***](src/com/anudev/ds/trees/BoundaryTraversalOfTree.java): Given a complete binary tree, traverse it such that all the boundary nodes are visited in Anti-Clockwise order starting from the root.
+
+11) [***Height of Binary Tree***](src/com/anudev/ds/trees/HeightOfBinaryTree.java): Find the Maximum Depth or Height of a Tree. 
+
+12) [***Level order traversing***](src/com/anudev/ds/trees/LevelTraversing.java): Level order traversing of binary tree.
+
+13) [***Number of leaves of Binary tree***](src/com/anudev/ds/trees/NumberOfLeaves.java): Print all the leaves of binary tree.
+
+14) [***Print all ancestors of node***](src/com/anudev/ds/trees/PrintAllAncestorsOfNode.java): Print all the ancestors of the node in a binary tree.
+
+15) [***Print all the paths from root to leaves***](src/com/anudev/ds/trees/PrintEachRootToLeafPath.java): Print all the paths from root to leaf in a binary tree.
+
+16) [***Size of binary tree***](src/com/anudev/ds/trees/SizeOfBinaryTree.java): Find the size of the binary tree.
+
+17) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumofTree.java): Find all the vertical sums of the nodes.
