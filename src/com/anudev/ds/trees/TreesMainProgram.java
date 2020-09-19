@@ -75,6 +75,14 @@ public class TreesMainProgram {
 
         // boundary traversal
         BoundaryTraversalOfTree.printBoundaryTraversal(rootNode);
+        System.out.println("\n");
+
+        // top view of binary tree
+        TopViewOfBinaryTree.topViewOfBinaryTree(rootNode);
+        System.out.println("\n");
+
+        // Bottom view of binary tree
+        BottomViewOfBinaryTree.bottomViewOfBinaryTree(rootNode);
         System.out.println();
     }
 }
