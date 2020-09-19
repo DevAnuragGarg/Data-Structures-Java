@@ -64,5 +64,9 @@ public class TreesMainProgram {
         // Print all the ancestors of tree
         System.out.println("Print all ancestors of node:\t");
         PrintAllAncestorsOfNode.printAncestorsOfNode(rootNode, new Node(16));
+
+        // Lowest common ancestor of two nodes
+        System.out.println("\n");
+        LowestCommonAncestor.findLowestCommonAncestor(rootNode, new Node(16), new Node(19));
     }
 }

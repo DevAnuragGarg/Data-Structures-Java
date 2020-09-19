@@ -49,4 +49,6 @@ Data structure interview questions with code in JAVA
 
 16) [***Size of binary tree***](src/com/anudev/ds/trees/SizeOfBinaryTree.java): Find the size of the binary tree.
 
-17) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumofTree.java): Find all the vertical sums of the nodes.
+17) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumOfTree.java): Find all the vertical sums of the nodes.
+
+18) [***Lowest common ancestor of two nodes***](src/com/anudev/ds/trees/LowestCommonAncestor.java): Given a binary tree (not a binary search tree) and two values say n1 and n2, write a program to find the least common ancestor.
