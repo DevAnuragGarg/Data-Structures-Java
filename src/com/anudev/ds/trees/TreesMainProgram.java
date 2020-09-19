@@ -72,5 +72,9 @@ public class TreesMainProgram {
         // print the sum of all the diagonals in binary tree
         DiagonalSumOfBinaryTree.printTheDiagonalSum(rootNode);
         System.out.println();
+
+        // boundary traversal
+        BoundaryTraversalOfTree.printBoundaryTraversal(rootNode);
+        System.out.println();
     }
 }

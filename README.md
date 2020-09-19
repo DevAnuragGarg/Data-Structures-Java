@@ -52,3 +52,7 @@ Data structure interview questions with code in JAVA
 17) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumOfTree.java): Find all the vertical sums of the nodes.
 
 18) [***Lowest common ancestor of two nodes***](src/com/anudev/ds/trees/LowestCommonAncestor.java): Given a binary tree (not a binary search tree) and two values say n1 and n2, write a program to find the least common ancestor.
+
+19) [***Diagonal sum of two nodes***](src/com/anudev/ds/trees/DiagonalSumOfBinaryTree.java): Print the sum of every diagonal in binary tree.
+
+20) [***Boundary traversal of binary tree***](src/com/anudev/ds/trees/BoundaryTraversalOfTree.java): Print the boundary traversal of binary tree.
