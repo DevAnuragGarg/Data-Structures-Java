@@ -68,5 +68,9 @@ public class TreesMainProgram {
         // Lowest common ancestor of two nodes
         System.out.println("\n");
         LowestCommonAncestor.findLowestCommonAncestor(rootNode, new Node(16), new Node(19));
+
+        // print the sum of all the diagonals in binary tree
+        DiagonalSumOfBinaryTree.printTheDiagonalSum(rootNode);
+        System.out.println();
     }
 }
