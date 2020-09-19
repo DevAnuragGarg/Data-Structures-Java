@@ -56,3 +56,7 @@ Data structure interview questions with code in JAVA
 19) [***Diagonal sum of two nodes***](src/com/anudev/ds/trees/DiagonalSumOfBinaryTree.java): Print the sum of every diagonal in binary tree.
 
 20) [***Boundary traversal of binary tree***](src/com/anudev/ds/trees/BoundaryTraversalOfTree.java): Print the boundary traversal of binary tree.
+
+21) [***Top view of binary tree***](src/com/anudev/ds/trees/TopViewOfBinaryTree.java): Print the top view of binary tree.
+
+22) [***Bottom view of binary tree***](src/com/anudev/ds/trees/BottomViewOfBinaryTree.java): Print the bottom view of binary tree.
