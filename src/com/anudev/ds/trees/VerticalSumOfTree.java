@@ -1,5 +1,6 @@
 package com.anudev.ds.trees;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -11,7 +12,8 @@ import java.util.HashMap;
  */
 public class VerticalSumOfTree {
 
-    private static HashMap<Integer, Integer> hashMap = new HashMap<>();
+    private static final HashMap<Integer, Integer> hashMap = new HashMap<>();
+    private static final HashMap<Integer, ArrayList<Node>> verticalTraversedHashMap = new HashMap<>();
 
     public static void printTheVerticalSum(Node node) {
         System.out.println("Vertical sum of binary tree: ");
@@ -24,11 +26,38 @@ public class VerticalSumOfTree {
             return;
         }
         hashMap.put(hd, hashMap.getOrDefault(hd, 0) + node.getValue());
+        ArrayList<Node> list = verticalTraversedHashMap.getOrDefault(hd, new ArrayList<>());
+        list.add(node);
+        verticalTraversedHashMap.put(hd, list);
         calculateVerticalSum(node.getLeftNode(), hd - 1);
         calculateVerticalSum(node.getRightNode(), hd + 1);
     }
 
     private static void printVerticalSum() {
         hashMap.forEach((key, value) -> System.out.println(key + " --------> " + value));
+    }
+
+    /**
+     * for generating the hashmap having the list of nodes for particular
+     * vertical distance
+     *
+     * @param node
+     * @return
+     */
+    public static HashMap<Integer, ArrayList<Node>> getVerticalTraversedHashmap(Node node) {
+        verticalTraversedHashMap.clear();
+        generateHashmap(node, 0);
+        return verticalTraversedHashMap;
+    }
+
+    public static void generateHashmap(Node node, int hd) {
+        if (node == null) {
+            return;
+        }
+        ArrayList<Node> list = verticalTraversedHashMap.getOrDefault(hd, new ArrayList<>());
+        list.add(node);
+        verticalTraversedHashMap.put(hd, list);
+        calculateVerticalSum(node.getLeftNode(), hd - 1);
+        calculateVerticalSum(node.getRightNode(), hd + 1);
     }
 }

@@ -83,6 +83,11 @@ public class TreesMainProgram {
 
         // Bottom view of binary tree
         BottomViewOfBinaryTree.bottomViewOfBinaryTree(rootNode);
-        System.out.println();
+        System.out.println("\n");
+
+        // Side view of binary tree
+        SideViewOfBinaryTree.printLeftSideView(rootNode);
+        SideViewOfBinaryTree.printRightSideView(rootNode);
+        System.out.println("\n");
     }
 }

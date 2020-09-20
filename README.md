@@ -60,3 +60,5 @@ Data structure interview questions with code in JAVA
 21) [***Top view of binary tree***](src/com/anudev/ds/trees/TopViewOfBinaryTree.java): Print the top view of binary tree.
 
 22) [***Bottom view of binary tree***](src/com/anudev/ds/trees/BottomViewOfBinaryTree.java): Print the bottom view of binary tree.
+
+23) [***Side view of binary tree(Left and Right view)***](src/com/anudev/ds/trees/SideViewOfBinaryTree.java): Print the side views of binary tree both the left side view and right side view.
