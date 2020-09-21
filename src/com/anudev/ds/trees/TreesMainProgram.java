@@ -92,5 +92,9 @@ public class TreesMainProgram {
 
         // predecessor of node in a binary tree
         InorderPredecessor.printInorderPredecessor(rootNode, 15);
+        System.out.println("\n");
+
+        // successor of node in a binary tree
+        InorderSuccessor.printInorderSuccessor(rootNode, 15);
     }
 }
