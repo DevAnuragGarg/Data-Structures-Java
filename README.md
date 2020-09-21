@@ -62,3 +62,7 @@ Data structure interview questions with code in JAVA
 22) [***Bottom view of binary tree***](src/com/anudev/ds/trees/BottomViewOfBinaryTree.java): Print the bottom view of binary tree.
 
 23) [***Side view of binary tree(Left and Right view)***](src/com/anudev/ds/trees/SideViewOfBinaryTree.java): Print the side views of binary tree both the left side view and right side view.
+
+24) [***Inorder predecessor of binary tree***](src/com/anudev/ds/trees/InorderPredecessor.java): Print the inorder predecessor of a node in a binary tree.
+
+25) [***Inorder successor of binary tree***](src/com/anudev/ds/trees/InorderSuccessor.java): Print the inorder successor of a node in a binary tree.

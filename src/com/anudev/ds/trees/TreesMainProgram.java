@@ -89,5 +89,8 @@ public class TreesMainProgram {
         SideViewOfBinaryTree.printLeftSideView(rootNode);
         SideViewOfBinaryTree.printRightSideView(rootNode);
         System.out.println("\n");
+
+        // predecessor of node in a binary tree
+        InorderPredecessor.printInorderPredecessor(rootNode, 15);
     }
 }
