@@ -18,10 +18,15 @@ public class TreesMainProgram {
 
     public static void main(String[] args) {
         final int[] array = {12, 15, 5, 9, 1, 3, 20, 17, 19, 2, 4, 16};
+        final int[] array2 = {63, 82, 56, 76, 49, 86, 41, 89, 35, 2, 98, 14};
 
         // construct and get the root node
         ConstructBinarySearchTree.constructBST(array);
         Node rootNode = ConstructBinarySearchTree.getRootNode();
+
+        // construct and get the second root node
+        ConstructBinarySearchTree.constructBST(array2);
+        Node rootNode2 = ConstructBinarySearchTree.getRootNode();
 
         // traversal
         PreOrderTraversal.preOrderTraversal(rootNode);
@@ -96,5 +101,16 @@ public class TreesMainProgram {
 
         // successor of node in a binary tree
         InorderSuccessor.printInorderSuccessor(rootNode, 15);
+        System.out.println("\n");
+
+        // merge two binary trees
+        MergeTwoBST.mergeTwoBST(rootNode, rootNode2);
+
+        // creation AVL trees, insert node and check if balanced
+        AVLTree.insertValue(6);
+        AVLTree.insertValue(10);
+        AVLTree.insertValue(3);
+        AVLTree.insertValue(15);
+        AVLTree.insertValue(12);
     }
 }
