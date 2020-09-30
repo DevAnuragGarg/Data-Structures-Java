@@ -1,5 +1,13 @@
 package com.anudev.ds.trees;
 
+/**
+ * Worst search time complexity in a binary search tree is O(h) where h
+ * is the height of the binary tree. height of binary search tree h = Log(n)
+ * i.e. number of elements in binary tree.
+ *
+ * Skewed right binary tree: tree which does not have any left subtree of
+ * its children too
+ */
 public class ConstructBinarySearchTree {
 
     private static Node rootNode;

@@ -1,5 +1,7 @@
 package com.anudev.ds.trees;
 
+import com.anudev.ds.queues.MaximumHeap;
+
 /**
  * Tree for the below mentioned array
  * <p>
@@ -112,5 +114,17 @@ public class TreesMainProgram {
         AVLTree.insertValue(3);
         AVLTree.insertValue(15);
         AVLTree.insertValue(12);
+        System.out.println("\n");
+
+        // create minimum heap
+        MaximumHeap.insert(50);
+        MaximumHeap.insert(30);
+        MaximumHeap.insert(20);
+        MaximumHeap.insert(15);
+        MaximumHeap.insert(10);
+        MaximumHeap.insert(8);
+        MaximumHeap.insert(16);
+        MaximumHeap.insert(60);
+        MaximumHeap.insert(70);
     }
 }
