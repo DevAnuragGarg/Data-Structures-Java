@@ -31,8 +31,28 @@ public class GraphMainProgram {
         dfs.addEdge(2, 0);
         dfs.addEdge(2, 3);
         dfs.addEdge(3, 3);
-        dfs.performDFS(2);
+        dfs.performDFS(0);
+        System.out.println("\n");
 
         // BFS
+        System.out.println("BFS");
+        BFS bfs = new BFS(7);
+        bfs.addVertex('A');
+        bfs.addVertex('B');
+        bfs.addVertex('C');
+        bfs.addVertex('D');
+        bfs.addVertex('E');
+        bfs.addVertex('F');
+        bfs.addVertex('G');
+        bfs.addEdge(0, 1);
+        bfs.addEdge(0, 6);
+        bfs.addEdge(1, 3);
+        bfs.addEdge(1, 4);
+        bfs.addEdge(1, 2);
+        bfs.addEdge(2, 4);
+        bfs.addEdge(3, 6);
+        bfs.addEdge(4, 6);
+        bfs.addEdge(5, 6);
+        bfs.performBFS(0);
     }
 }
