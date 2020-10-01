@@ -93,4 +93,42 @@ public class MaximumHeap {
         }
         return false;
     }
+
+    private static int delete() {
+        int value = 0;
+        if (size > 0) {
+            value = heapArray[1];
+
+            // move the last element value to 0th place
+            heapArray[1] = heapArray[size];
+            size--;
+
+            // now keep on checking if the value satisfy
+            int k = 1;
+            while (2 * k <= size || 2 * k + 1 <= size) {
+                int minIndex;
+                if (heapArray[2 * k] >= heapArray[k]) {
+                    if (2 * k + 1 <= size && heapArray[2 * k + 1] >= heapArray[k]) {
+                        break;
+                    } else if (2 * k + 1 > size) {
+                        break;
+                    }
+                }
+                if (2 * k + 1 > size) {
+                    minIndex = heapArray[2 * k] < heapArray[k] ? 2 * k : k;
+                } else {
+                    if (heapArray[k] > heapArray[2 * k] || heapArray[k] > heapArray[2 * k + 1]) {
+                        minIndex = heapArray[2 * k] < heapArray[2 * k + 1] ? 2 * k : 2 * k + 1;
+                    } else {
+                        minIndex = k;
+                    }
+                }
+                int temp = heapArray[k];
+                heapArray[k] = heapArray[minIndex];
+                heapArray[minIndex] = temp;
+                k = minIndex;
+            }
+        }
+        return value;
+    }
 }
