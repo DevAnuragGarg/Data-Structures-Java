@@ -57,21 +57,3 @@ public class DFS {
         return -1;
     }
 }
-
-class Vertex {
-    private char label;
-    private boolean isVisited;
-
-    public Vertex(char lab) {
-        label = lab;
-    }
-
-    public boolean isVisited() {
-        return isVisited;
-    }
-
-    public void setVisited(boolean visited) {
-        System.out.print(label + ", ");
-        isVisited = visited;
-    }
-}
