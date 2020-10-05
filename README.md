@@ -66,3 +66,12 @@ Data structure interview questions with code in JAVA
 24) [***Inorder predecessor of binary tree***](src/com/anudev/ds/trees/InorderPredecessor.java): Print the inorder predecessor of a node in a binary tree.
 
 25) [***Inorder successor of binary tree***](src/com/anudev/ds/trees/InorderSuccessor.java): Print the inorder successor of a node in a binary tree.
+
+## Graphs
+1) [***BFS***](src/com/anudev/ds/graphs/BFS.java) : 
+
+2) [***DFS***](src/com/anudev/ds/graphs/DFS.java) :
+
+3) [***Dijkstra Algorithm***](src/com/anudev/ds/graphs/dijkstra/DijkstraAlgorithm.java): 
+
+4) [***Bellman Ford Algorithm***](src/com/anudev/ds/graphs/bellmanford/BellmanFordAlgorithm.java) : 

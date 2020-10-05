@@ -1,5 +1,6 @@
 package com.anudev.ds.graphs;
 
+import com.anudev.ds.graphs.bellmanford.BellmanFordAlgorithm;
 import com.anudev.ds.graphs.dijkstra.DijkstraAlgorithm;
 import com.anudev.ds.graphs.dijkstra.Edge;
 import com.anudev.ds.graphs.dijkstra.Vertex;
@@ -92,10 +93,34 @@ public class GraphMainProgram {
         // performing algo
         DijkstraAlgorithm dijkstra = new DijkstraAlgorithm();
         dijkstra.performDijkstraAlgorithm(vertex1);
-        System.out.println("Distance of " + vertex2.getLabel() + "  is " + vertex2.getMinDistance());
-        System.out.println("Distance of " + vertex3.getLabel() + "  is " + vertex3.getMinDistance());
-        System.out.println("Distance of " + vertex4.getLabel() + "  is " + vertex4.getMinDistance());
-        System.out.println("Distance of " + vertex5.getLabel() + "  is " + vertex5.getMinDistance());
-        System.out.println("Distance of " + vertex6.getLabel() + "  is " + vertex6.getMinDistance());
+        System.out.println("Distance of " + vertex2.getLabel() + " is " + vertex2.getMinDistance());
+        System.out.println("Distance of " + vertex3.getLabel() + " is " + vertex3.getMinDistance());
+        System.out.println("Distance of " + vertex4.getLabel() + " is " + vertex4.getMinDistance());
+        System.out.println("Distance of " + vertex5.getLabel() + " is " + vertex5.getMinDistance());
+        System.out.println("Distance of " + vertex6.getLabel() + " is " + vertex6.getMinDistance());
+        System.out.println();
+
+        // Bellman ford algo
+        BellmanFordAlgorithm algorithm = new BellmanFordAlgorithm(6);
+        // creating vertices
+        algorithm.addVertex('A');
+        algorithm.addVertex('B');
+        algorithm.addVertex('C');
+        algorithm.addVertex('D');
+        algorithm.addVertex('E');
+        algorithm.addVertex('F');
+        // creating edges : We are using this so that we no need to
+        // create the adjacency matrix or list. Just directly adding
+        // the edges into the vertex from which the edge starts
+        algorithm.addEdge(0, 1, 10);
+        algorithm.addEdge(0, 2, 15);
+        algorithm.addEdge(1, 3, 12);
+        algorithm.addEdge(1, 5, 15);
+        algorithm.addEdge(3, 5, 1);
+        algorithm.addEdge(2, 4, 10);
+        algorithm.addEdge(3, 4, 2);
+        algorithm.addEdge(5, 4, 5);
+        // performing algo
+        algorithm.performAlgo(0);
     }
 }
