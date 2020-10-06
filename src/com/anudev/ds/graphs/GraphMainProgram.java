@@ -4,6 +4,7 @@ import com.anudev.ds.graphs.bellmanford.BellmanFordAlgorithm;
 import com.anudev.ds.graphs.dijkstra.DijkstraAlgorithm;
 import com.anudev.ds.graphs.dijkstra.Edge;
 import com.anudev.ds.graphs.dijkstra.Vertex;
+import com.anudev.ds.graphs.flyodwarshall.FloydWarshallAlgorithm;
 
 public class GraphMainProgram {
 
@@ -109,9 +110,7 @@ public class GraphMainProgram {
         algorithm.addVertex('D');
         algorithm.addVertex('E');
         algorithm.addVertex('F');
-        // creating edges : We are using this so that we no need to
-        // create the adjacency matrix or list. Just directly adding
-        // the edges into the vertex from which the edge starts
+        // creating edges
         algorithm.addEdge(0, 1, 10);
         algorithm.addEdge(0, 2, 15);
         algorithm.addEdge(1, 3, 12);
@@ -122,5 +121,23 @@ public class GraphMainProgram {
         algorithm.addEdge(5, 4, 5);
         // performing algo
         algorithm.performAlgo(0);
+
+        // Floyd warshall algo
+        System.out.println("\nFloyd Warshall Algorithm");
+        FloydWarshallAlgorithm algo = new FloydWarshallAlgorithm(4);
+        // creating vertices
+        algo.addVertex('A');
+        algo.addVertex('B');
+        algo.addVertex('C');
+        algo.addVertex('D');
+        // creating edges
+        algo.addEdge(0, 1, 3);
+        algo.addEdge(1, 2, -2);
+        algo.addEdge(2, 3, 2);
+        algo.addEdge(3, 0, 1);
+        algo.addEdge(0, 3, 15);
+        algo.addEdge(0, 2, 6);
+        // performing algo
+        algo.performAlgo();
     }
 }
