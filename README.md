@@ -14,7 +14,7 @@ Data structure interview questions with code in JAVA
 1) [***Next greater element (Using stacks)***](src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
 
 ## Linked List
-1)
+Need to start
 
 ## Trees :deciduous_tree:
 1) [***Binary search tree: construct***](src/com/anudev/ds/trees/ConstructBinarySearchTree.java): Construction of binary search tree from integer array.
@@ -68,10 +68,12 @@ Data structure interview questions with code in JAVA
 25) [***Inorder successor of binary tree***](src/com/anudev/ds/trees/InorderSuccessor.java): Print the inorder successor of a node in a binary tree.
 
 ## Graphs
-1) [***BFS***](src/com/anudev/ds/graphs/BFS.java) : 
+1) [***BFS***](src/com/anudev/ds/graphs/BFS.java): Breadth First Search (BFS) algorithm traverses a graph in a breadth ward motion and uses a queue to remember to get the next vertex to start a search.
 
-2) [***DFS***](src/com/anudev/ds/graphs/DFS.java) :
+2) [***DFS***](src/com/anudev/ds/graphs/DFS.java): Depth First Search (DFS) algorithm traverses a graph in a depth ward motion and uses a stack to remember to get the next vertex to start a search.
 
-3) [***Dijkstra Algorithm***](src/com/anudev/ds/graphs/dijkstra/DijkstraAlgorithm.java): 
+3) [***Dijkstra Algorithm***](src/com/anudev/ds/graphs/dijkstra/DijkstraAlgorithm.java): an algorithm for finding the shortest path from a starting node to a target node in a weighted graph. 
 
-4) [***Bellman Ford Algorithm***](src/com/anudev/ds/graphs/bellmanford/BellmanFordAlgorithm.java) : 
+4) [***Bellman Ford Algorithm***](src/com/anudev/ds/graphs/bellmanford/BellmanFordAlgorithm.java): an algorithm that computes the shortest paths from a single source vertex to all the other vertices in a weighted digraph.
+
+5) [***Floyd Warshell Algorithm***](src/com/anudev/ds/graphs/floydwarshall/FloydWarshallAlgorithm.java):  an algorithm for finding the shortest path between all the pairs of vertices in a weighted graph. This algorithm works for both the directed and undirected weighted graphs.

@@ -6,6 +6,10 @@ import java.util.Stack;
  * DFS works in manner similar to preorder traversal of trees. Internally
  * algorithm uses stacks. Need to take care of 2 things: 1) visiting a
  * vertex 2) Exploration of vertex
+ * <p>
+ * Depth First Search (DFS) algorithm traverses a graph in a depth ward
+ * motion and uses a stack to remember to get the next vertex to start
+ * a search, when a dead end occurs in any iteration.
  */
 public class DFS {
 

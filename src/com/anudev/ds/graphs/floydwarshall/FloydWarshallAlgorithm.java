@@ -1,4 +1,4 @@
-package com.anudev.ds.graphs.flyodwarshall;
+package com.anudev.ds.graphs.floydwarshall;
 
 /**
  * if you need to find the shortest path between any two vertices. Floyd

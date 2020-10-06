@@ -3,6 +3,14 @@ package com.anudev.ds.graphs;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * BFS is a traversing algorithm where you should start traversing from
+ * a selected node (source or starting node) and traverse the graph layer
+ * wise thus exploring the neighbour nodes (nodes which are directly
+ * connected to source node). You must then move towards the next-level
+ * neighbour nodes. First move horizontally and visit all the nodes of
+ * the current layer. Move to the next layer
+ */
 public class BFS {
     private final int[][] adjMatrix;
     private final Vertex[] vertices;

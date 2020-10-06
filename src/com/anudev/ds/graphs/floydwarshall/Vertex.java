@@ -1,4 +1,4 @@
-package com.anudev.ds.graphs.flyodwarshall;
+package com.anudev.ds.graphs.floydwarshall;
 
 public class Vertex {
 

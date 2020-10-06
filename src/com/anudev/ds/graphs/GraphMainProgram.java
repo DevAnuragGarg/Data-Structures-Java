@@ -4,7 +4,7 @@ import com.anudev.ds.graphs.bellmanford.BellmanFordAlgorithm;
 import com.anudev.ds.graphs.dijkstra.DijkstraAlgorithm;
 import com.anudev.ds.graphs.dijkstra.Edge;
 import com.anudev.ds.graphs.dijkstra.Vertex;
-import com.anudev.ds.graphs.flyodwarshall.FloydWarshallAlgorithm;
+import com.anudev.ds.graphs.floydwarshall.FloydWarshallAlgorithm;
 
 public class GraphMainProgram {
 
