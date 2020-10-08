@@ -139,5 +139,33 @@ public class GraphMainProgram {
         algo.addEdge(0, 2, 6);
         // performing algo
         algo.performAlgo();
+
+        // Disjoint sets
+        System.out.println("\nDisjoint sets");
+        DisjointSets disjointSets = new DisjointSets();
+        disjointSets.makeSet(1);
+        disjointSets.makeSet(2);
+        disjointSets.makeSet(3);
+        disjointSets.makeSet(4);
+        disjointSets.makeSet(5);
+        disjointSets.makeSet(6);
+        disjointSets.makeSet(7);
+
+        // do unions
+        disjointSets.union(1, 2);
+        disjointSets.union(2, 3);
+        disjointSets.union(4, 5);
+        disjointSets.union(6, 7);
+        disjointSets.union(5, 6);
+        disjointSets.union(3, 7);
+
+        // find set
+        System.out.println(disjointSets.findSet(1));
+        System.out.println(disjointSets.findSet(2));
+        System.out.println(disjointSets.findSet(3));
+        System.out.println(disjointSets.findSet(4));
+        System.out.println(disjointSets.findSet(5));
+        System.out.println(disjointSets.findSet(6));
+        System.out.println(disjointSets.findSet(7));
     }
 }
