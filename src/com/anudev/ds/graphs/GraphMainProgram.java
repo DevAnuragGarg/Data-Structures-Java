@@ -1,6 +1,7 @@
 package com.anudev.ds.graphs;
 
 import com.anudev.ds.graphs.bellmanford.BellmanFordAlgorithm;
+import com.anudev.ds.graphs.cycleundirected.CycleUsingDisjointSets;
 import com.anudev.ds.graphs.dijkstra.DijkstraAlgorithm;
 import com.anudev.ds.graphs.dijkstra.Edge;
 import com.anudev.ds.graphs.dijkstra.Vertex;
@@ -167,5 +168,14 @@ public class GraphMainProgram {
         System.out.println(disjointSets.findSet(5));
         System.out.println(disjointSets.findSet(6));
         System.out.println(disjointSets.findSet(7));
+
+        // finding cycle in undirected graph using disjoint sets
+        System.out.println("\nCycle in undirected graph using Disjoint sets");
+        CycleUsingDisjointSets cycleUsingDisjointSets = new CycleUsingDisjointSets(4);
+        cycleUsingDisjointSets.addEdge(0, 1);
+        cycleUsingDisjointSets.addEdge(1, 2);
+        cycleUsingDisjointSets.addEdge(2, 0);
+        cycleUsingDisjointSets.addEdge(2, 3);
+        System.out.println("Does this graph has cycle: " + cycleUsingDisjointSets.hasCycle());
     }
 }

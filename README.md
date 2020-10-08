@@ -77,3 +77,7 @@ Need to start
 4) [***Bellman Ford Algorithm***](src/com/anudev/ds/graphs/bellmanford/BellmanFordAlgorithm.java): an algorithm that computes the shortest paths from a single source vertex to all the other vertices in a weighted digraph.
 
 5) [***Floyd Warshell Algorithm***](src/com/anudev/ds/graphs/floydwarshall/FloydWarshallAlgorithm.java):  an algorithm for finding the shortest path between all the pairs of vertices in a weighted graph. This algorithm works for both the directed and undirected weighted graphs.
+
+6) [***Disjoint sets***](src/com/anudev/ds/graphs/DisjointSets.java):  A disjoint-set data structure is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. This can be used for determining if two elements are in the same subset. Union: Join two subsets into a single subset.
+
+7) [***Find cycle in undirected graph(disjoint sets)***](src/com/anudev/ds/graphs/cycleundirected/CycleUsingDisjointSets.java):  Finding the cycle inside an undirected graph using the disjoint sets.
