@@ -1,6 +1,7 @@
 package com.anudev.ds.graphs;
 
 import com.anudev.ds.graphs.bellmanford.BellmanFordAlgorithm;
+import com.anudev.ds.graphs.cycledirected.CycleUsingDFS;
 import com.anudev.ds.graphs.cycleundirected.CycleUsingDisjointSets;
 import com.anudev.ds.graphs.dijkstra.DijkstraAlgorithm;
 import com.anudev.ds.graphs.dijkstra.Edge;
@@ -11,7 +12,9 @@ public class GraphMainProgram {
 
     public static void main(String[] args) {
 
+        //=======================================
         // Graph with adjacency matrix and lists
+        //=======================================
         Graph graph = new Graph(5);
         graph.addEdge(0, 1);
         graph.addEdge(0, 4);
@@ -25,7 +28,9 @@ public class GraphMainProgram {
         graph.printAdjacencyList();
         System.out.println();
 
+        //======
         // DFS
+        //======
         System.out.println("DFS");
         DFS dfs = new DFS(4);
         dfs.addVertex('A');
@@ -41,7 +46,9 @@ public class GraphMainProgram {
         dfs.performDFS(0);
         System.out.println("\n");
 
+        //=======
         // BFS
+        //=======
         System.out.println("BFS");
         BFS bfs = new BFS(7);
         bfs.addVertex('A');
@@ -63,7 +70,9 @@ public class GraphMainProgram {
         bfs.performBFS(0);
         System.out.println("\n");
 
+        //===========
         // Dijkstra
+        //===========
         System.out.println("Dijkstra");
         // creating vertices
         Vertex vertex1 = new Vertex('A');
@@ -102,7 +111,9 @@ public class GraphMainProgram {
         System.out.println("Distance of " + vertex6.getLabel() + " is " + vertex6.getMinDistance());
         System.out.println();
 
+        //====================
         // Bellman ford algo
+        //====================
         BellmanFordAlgorithm algorithm = new BellmanFordAlgorithm(6);
         // creating vertices
         algorithm.addVertex('A');
@@ -123,7 +134,9 @@ public class GraphMainProgram {
         // performing algo
         algorithm.performAlgo(0);
 
+        //====================
         // Floyd warshall algo
+        //====================
         System.out.println("\nFloyd Warshall Algorithm");
         FloydWarshallAlgorithm algo = new FloydWarshallAlgorithm(4);
         // creating vertices
@@ -141,7 +154,9 @@ public class GraphMainProgram {
         // performing algo
         algo.performAlgo();
 
+        //====================
         // Disjoint sets
+        //====================
         System.out.println("\nDisjoint sets");
         DisjointSets disjointSets = new DisjointSets();
         disjointSets.makeSet(1);
@@ -169,7 +184,9 @@ public class GraphMainProgram {
         System.out.println(disjointSets.findSet(6));
         System.out.println(disjointSets.findSet(7));
 
+        //=======================================================
         // finding cycle in undirected graph using disjoint sets
+        //=======================================================
         System.out.println("\nCycle in undirected graph using Disjoint sets");
         CycleUsingDisjointSets cycleUsingDisjointSets = new CycleUsingDisjointSets(4);
         cycleUsingDisjointSets.addEdge(0, 1);
@@ -177,5 +194,27 @@ public class GraphMainProgram {
         cycleUsingDisjointSets.addEdge(2, 0);
         cycleUsingDisjointSets.addEdge(2, 3);
         System.out.println("Does this graph has cycle: " + cycleUsingDisjointSets.hasCycle());
+
+        //===========================================
+        // finding cycle in directed graph using dfs
+        //===========================================
+        System.out.println("\nCycle in directed graph using DFS");
+        CycleUsingDFS cycleUsingDFS = new CycleUsingDFS(6);
+        cycleUsingDFS.addVertex('1');
+        cycleUsingDFS.addVertex('2');
+        cycleUsingDFS.addVertex('3');
+        cycleUsingDFS.addVertex('4');
+        cycleUsingDFS.addVertex('5');
+        cycleUsingDFS.addVertex('6');
+
+        // add edges
+        cycleUsingDFS.getVertex(0).addEdge(cycleUsingDFS.getVertex(1));
+        cycleUsingDFS.getVertex(3).addEdge(cycleUsingDFS.getVertex(0));
+        cycleUsingDFS.getVertex(3).addEdge(cycleUsingDFS.getVertex(4));
+        cycleUsingDFS.getVertex(4).addEdge(cycleUsingDFS.getVertex(5));
+        cycleUsingDFS.getVertex(5).addEdge(cycleUsingDFS.getVertex(3));
+
+        // run algo
+        System.out.println("Does this graph has cycle: " + cycleUsingDFS.hasCycle());
     }
 }
