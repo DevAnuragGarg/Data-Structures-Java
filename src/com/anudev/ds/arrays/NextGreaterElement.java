@@ -14,11 +14,8 @@ import java.util.Stack;
  */
 public class NextGreaterElement {
 
-    private int[] tempArray;
-    private int[] inputArray = {5, 3, 2, 10, 6, 8, 1, 4, 12, 7, 4};
-
-    public void printNextGreaterElements() {
-        tempArray = new int[inputArray.length];
+    public static void printNextGreaterElements(int[] inputArray) {
+        int[] tempArray = new int[inputArray.length];
 
         // creating a stack
         Stack<Integer> stack = new Stack<>();
