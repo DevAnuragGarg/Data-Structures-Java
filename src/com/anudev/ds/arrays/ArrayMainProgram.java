@@ -8,9 +8,15 @@ public class ArrayMainProgram {
 
         // next greater element
         NextGreaterElement.printNextGreaterElements(inputArray);
-        System.out.println("\n");
+        System.out.println();
 
         // get minimum element in array
         MinimumValue.findMinimumValue(inputArray);
+        System.out.println();
+
+        // leader in the array
+        LeaderInArray.findLeaders(inputArray);
+        System.out.println();
+
     }
 }

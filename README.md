@@ -13,6 +13,10 @@ Data structure interview questions with code in JAVA
 ## Arrays
 1) [***Next greater element (Using stacks)***](src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
 
+2) [***Minimum element in array***](src/com/anudev/ds/arrays/MinimumValue.java): Find the minimum element in an array.
+
+3) [***Leader in array***](src/com/anudev/ds/arrays/LeaderInArray.java): Find all the leaders in the array.
+
 ## Linked List
 1) [***Binary to Doubly linked list***](src/com/anudev/ds/linkedlist/BinaryTreeToDoublyLinkedList.java): Construction of doubly linked list from a binary tree.
 
