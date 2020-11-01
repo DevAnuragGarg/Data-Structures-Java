@@ -47,25 +47,27 @@ Data structure interview questions with code in JAVA
 
 15) [***Print all the paths from root to leaves***](src/com/anudev/ds/trees/PrintEachRootToLeafPath.java): Print all the paths from root to leaf in a binary tree.
 
-16) [***Size of binary tree***](src/com/anudev/ds/trees/SizeOfBinaryTree.java): Find the size of the binary tree.
+16) [***Size of binary tree(Recursively)***](src/com/anudev/ds/trees/SizeOfBinaryTree.java): Find the size of the binary tree, recursively.
 
-17) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumOfTree.java): Find all the vertical sums of the nodes.
+17) [***Size of binary tree(Non-recursively)***](src/com/anudev/ds/trees/SizeOfBinaryTree.java): Find the size of the binary tree, non-recursively.
 
-18) [***Lowest common ancestor of two nodes***](src/com/anudev/ds/trees/LowestCommonAncestor.java): Given a binary tree (not a binary search tree) and two values say n1 and n2, write a program to find the least common ancestor.
+18) [***Vertical sum of binary tree***](src/com/anudev/ds/trees/VerticalSumOfTree.java): Find all the vertical sums of the nodes.
 
-19) [***Diagonal sum of two nodes***](src/com/anudev/ds/trees/DiagonalSumOfBinaryTree.java): Print the sum of every diagonal in binary tree.
+19) [***Lowest common ancestor of two nodes***](src/com/anudev/ds/trees/LowestCommonAncestor.java): Given a binary tree (not a binary search tree) and two values say n1 and n2, write a program to find the least common ancestor.
 
-20) [***Boundary traversal of binary tree***](src/com/anudev/ds/trees/BoundaryTraversalOfTree.java): Print the boundary traversal of binary tree.
+20) [***Diagonal sum of two nodes***](src/com/anudev/ds/trees/DiagonalSumOfBinaryTree.java): Print the sum of every diagonal in binary tree.
 
-21) [***Top view of binary tree***](src/com/anudev/ds/trees/TopViewOfBinaryTree.java): Print the top view of binary tree.
+21) [***Boundary traversal of binary tree***](src/com/anudev/ds/trees/BoundaryTraversalOfTree.java): Print the boundary traversal of binary tree.
 
-22) [***Bottom view of binary tree***](src/com/anudev/ds/trees/BottomViewOfBinaryTree.java): Print the bottom view of binary tree.
+22) [***Top view of binary tree***](src/com/anudev/ds/trees/TopViewOfBinaryTree.java): Print the top view of binary tree.
 
-23) [***Side view of binary tree(Left and Right view)***](src/com/anudev/ds/trees/SideViewOfBinaryTree.java): Print the side views of binary tree both the left side view and right side view.
+23) [***Bottom view of binary tree***](src/com/anudev/ds/trees/BottomViewOfBinaryTree.java): Print the bottom view of binary tree.
 
-24) [***Inorder predecessor of binary tree***](src/com/anudev/ds/trees/InorderPredecessor.java): Print the inorder predecessor of a node in a binary tree.
+24) [***Side view of binary tree(Left and Right view)***](src/com/anudev/ds/trees/SideViewOfBinaryTree.java): Print the side views of binary tree both the left side view and right side view.
 
-25) [***Inorder successor of binary tree***](src/com/anudev/ds/trees/InorderSuccessor.java): Print the inorder successor of a node in a binary tree.
+25) [***Inorder predecessor of binary tree***](src/com/anudev/ds/trees/InorderPredecessor.java): Print the inorder predecessor of a node in a binary tree.
+
+26) [***Inorder successor of binary tree***](src/com/anudev/ds/trees/InorderSuccessor.java): Print the inorder successor of a node in a binary tree.
 
 ## Graphs
 1) [***BFS***](src/com/anudev/ds/graphs/BFS.java): Breadth First Search (BFS) algorithm traverses a graph in a breadth ward motion and uses a queue to remember to get the next vertex to start a search.
