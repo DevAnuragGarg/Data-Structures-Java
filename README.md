@@ -14,7 +14,7 @@ Data structure interview questions with code in JAVA
 1) [***Next greater element (Using stacks)***](src/com/anudev/ds/arrays/NextGreaterElement.java): Find the next greater element in an array. If not found for an element show null.
 
 ## Linked List
-Need to start
+1) [***Binary to Doubly linked list***](src/com/anudev/ds/linkedlist/BinaryTreeToDoublyLinkedList.java): Construction of doubly linked list from a binary tree.
 
 ## Trees :deciduous_tree:
 1) [***Binary search tree: construct***](src/com/anudev/ds/trees/ConstructBinarySearchTree.java): Construction of binary search tree from integer array.

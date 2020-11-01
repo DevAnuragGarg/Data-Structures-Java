@@ -1,26 +1,35 @@
 package com.anudev.ds.linkedlist;
 
-public class Node<T> {
-    private T value;
-    private Node<T> nextNode;
+public class Node {
+    private int value;
+    private Node nextNode;
+    private Node previousNode;
 
-    public Node(T value) {
+    public Node(int value) {
         this.value = value;
     }
 
-    public T getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(T value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
-    public Node<T> getNextNode() {
+    public Node getNextNode() {
         return nextNode;
     }
 
-    public void setNextNode(Node<T> nextNode) {
+    public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
+    }
+
+    public Node getPreviousNode() {
+        return previousNode;
+    }
+
+    public void setPreviousNode(Node previousNode) {
+        this.previousNode = previousNode;
     }
 }
