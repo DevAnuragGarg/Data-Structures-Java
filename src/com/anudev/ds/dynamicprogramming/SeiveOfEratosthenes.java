@@ -3,6 +3,7 @@ package com.anudev.ds.dynamicprogramming;
 import com.anudev.ds.arrays.ArraysUtility;
 
 /*
+ * Finding all the prime numbers
  * we wil create an array of that number. When we reach a number we will start
  * marking down the multiple of that number starting from the square of that
  * number. If the square of that number becomes greater than the maximum number

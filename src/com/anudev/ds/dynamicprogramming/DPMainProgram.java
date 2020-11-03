@@ -6,5 +6,8 @@ public class DPMainProgram {
 
         // LPS (Longest palindromic subsequence)
         LongestPalindromeSubsequence.printLPS("pqrdrpd");
+
+        // Minimum number of jumps to reach the end of array
+        MinimumJumpsToReachEnd.minimumJumpsToReachEnd();
     }
 }
