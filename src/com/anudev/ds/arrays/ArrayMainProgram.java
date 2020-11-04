@@ -18,7 +18,11 @@ public class ArrayMainProgram {
         LeaderInArray.findLeaders(inputArray);
         System.out.println();
 
-        // remove duplicates from sorted array
-        RemoveDuplicatesSortedArray.removeDuplicates();
+        // remove duplicates from sorted array with extra space complexity
+        RemoveDuplicatesSortedArray.removeDuplicatesWithNSpaceComplexity();
+
+        // remove duplicates from sorted array with no space complexity
+        System.out.println("\n");
+        RemoveDuplicatesSortedArray.removeDuplicatesWithConstantSpaceComplexity();
     }
 }
