@@ -18,5 +18,7 @@ public class ArrayMainProgram {
         LeaderInArray.findLeaders(inputArray);
         System.out.println();
 
+        // remove duplicates from sorted array
+        RemoveDuplicatesSortedArray.removeDuplicates();
     }
 }
