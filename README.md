@@ -17,6 +17,8 @@ Data structure interview questions with code in JAVA
 
 3) [***Leader in array***](src/com/anudev/ds/arrays/LeaderInArray.java): Find all the leaders in the array.
 
+4) [***KMP Algorithm***](src/com/anudev/ds/arrays/KMPStringSearchAlgo.java): Knuth-Morris-Pratt string searching algorithm searches for occurrences of a word W within a main text string S.
+
 ## Linked List
 1) [***Binary to Doubly linked list***](src/com/anudev/ds/linkedlist/BinaryTreeToDoublyLinkedList.java): Construction of doubly linked list from a binary tree.
 

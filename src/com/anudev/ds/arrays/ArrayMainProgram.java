@@ -24,5 +24,9 @@ public class ArrayMainProgram {
         // remove duplicates from sorted array with no space complexity
         System.out.println("\n");
         RemoveDuplicatesSortedArray.removeDuplicatesWithConstantSpaceComplexity();
+
+        // KMP: finding substring
+        System.out.println("\n");
+        KMPStringSearchAlgo.searchString();
     }
 }
